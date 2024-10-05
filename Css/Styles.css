@@ -477,11 +477,10 @@ a{
   
 .footer {
     width:100%;
-   height: auto;
-     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../IMG/textured-metal-background.jpg);
-    background-size: cover; 
-    background-position: center; 
-}
+    height: auto;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../IMG/textured-metal-background.jpg);
+     background-size: cover; 
+     background-position: center; }
 
 .footer .con {
     color: #fff;
@@ -646,13 +645,25 @@ a{
 /*Responsive*/
 /* Mobile */
 @media (max-width: 576px) {
+    .home .container{
+        flex-direction: column-reverse;
+        gap: 50px;    
+    }
+    .list ul{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .navbar {
+        position: relative;
+        
+    }
+
     .home .caption{
         width: 100%;
-        margin: 30px;
     }
     .home .img {
         width: 100%;
-        margin: 30px;
 
     }
     .home .caption p {
@@ -661,7 +672,7 @@ a{
         color: #37373f;
     }
     .home .caption h2 {
-        font-size: 30px;
+        font-size: 40px;
         font-weight: 700;
         color: #212529;
     }
@@ -676,10 +687,7 @@ a{
     
     .navbar .container {
         margin: 0 10px;
-    }
-
-    .home .container {
-        margin: 40px 15px 0 15px;
+        flex-direction: column;
     }
 
     .btn-group {
@@ -705,6 +713,11 @@ a{
 
     .contact iframe {
         height: 250px;
+    }
+    .contact .icon {
+        width: 30px;
+        height: 30px;
+        
     }
 
     .input-row {
