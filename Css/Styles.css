@@ -476,7 +476,7 @@ a{
   }
   
 .footer {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/textured-metal-background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../IMG/textured-metal-background.jpg);
 }
 
 .footer .con {
